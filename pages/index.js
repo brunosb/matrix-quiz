@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
+import { useRouter } from 'next/router';
 import db from '../db.json';
 import Widget from '../src/components/Widget';
 import QuizLogo from '../src/components/QuizLogo';
@@ -22,6 +23,18 @@ const QuizContainer = styled.div`
 `;
 
 export default function Home() {
+  const [name, setName] = useState('');
+  const router = useRouter();
+
+  function onSubimitForm(event) {
+    event.preventDefault();
+    router.push(`/quiz?name=${name}`);
+  }
+
+  function onChangeName(event) {
+    setName(event.target.value);
+  }
+
   return (
     <BackgroundMatrix>
       <QuizContainer>
@@ -37,9 +50,13 @@ export default function Home() {
 
         <Widget>
           <Widget.Content>
-            <h1>Quizes da Galera</h1>
-
-            <p>lorem ipsum dolor sit amet...</p>
+            <form onSubmit={onSubimitForm}>
+              <input placeholder="Digite seu nome" onChange={onChangeName} />
+              <button type="submit" disabled={name.length === 0}>
+                Jogar
+                {name}
+              </button>
+            </form>
           </Widget.Content>
         </Widget>
         <Footer />
