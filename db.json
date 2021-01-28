@@ -4,30 +4,58 @@
   "description": "Teste os seus conhecimentos sobre a triologia Matrix e vamos ver quantos programas você vai hackear!",
   "questions": [
     {
-      "image": "https://media.giphy.com/media/xUOxf3yDKCuwpOlT3i/giphy.gif",
-      "title": "Como fazer um seletor por id via CSS?",
+      "image": "https://media.giphy.com/media/VbEloWwOz3QqYBsqIZ/giphy.gif",
+      "title": "Qual é a pílula que Neo escolhe?",
       "description": "Essa é pra aquecer",
-      "answer": 2,
+      "answer": 0,
       "alternatives": [
-        ".elemento",
-        "*elemento",
-        "#elemento",
-        "%elemento"
+        "Vermelha",
+        "Azul"
       ]
     },
     {
-      "image": "https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif",
-      "title": "Como fazer um background gradiente com css?",
+      "image": "https://media.giphy.com/media/1yvoDVJQsTfHi/giphy.gif",
+      "title": "Qual é o verdadeiro nome de Neo?",
       "description": "Faz tempo em haha",
-      "answer": 0,
+      "answer": 2,
       "alternatives": [
-         "background: linear-gradient(#e66465, #9198e5);",
-         "background: gradient(#e66465, #9198e5);"
+         "Gideon Emery",
+         "Randall D. Kim",
+         "Thomas A. Anderson",
+         "Don Davis",
+         "Zach Staenberg"
+      ]
+    },
+    {
+      "image": "https://media.giphy.com/media/v7WM6sLcnGIc8/giphy.gif",
+      "title": "Quem trai a equipe no primeiro filme?",
+      "description": "Faz tempo em haha",
+      "answer": 1,
+      "alternatives": [
+         "Niobe",
+         "Cypher",
+         "Morpheus",
+         "Trinity",
+         "Tank"
+      ]
+    },
+    {
+      "image": "https://media.giphy.com/media/H6KusZ8pzxtyymblnE/giphy.gif",
+      "title": "Por fim... qual desses atores recusou o papel de Neo?",
+      "description": "Faz tempo em haha",
+      "answer": 4,
+      "alternatives": [
+         "Brad Pitt",
+         "Tom Cruise",
+         "Denzel Washington",
+         "Joaquin Phoenix",
+         "Will Smith",
+         "Christian Bale"
       ]
     }
   ],
   "external": [
-    ""
+    "https://flash-quiz-next.davidlpc1.vercel.app/"
   ],
   "theme": {
     "colors": {
